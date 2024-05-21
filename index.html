@@ -14,14 +14,32 @@
         justify-content: center;
         height: 100vh;
       }
+
+      .login-form:focus-within {
+        outline: 3px solid Highlight;
+      }
+
+      .login-input {
+      }
+
+      .login-button:focus-visible {
+        outline: 1px solid Highlight;
+        outline-offset: 5px;
+      }
     </style>
   </head>
   <body>
-    <form class="login-form" action="/login">
+    <form class="login-form" action="#">
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
+      <input class="login-input" type="email" name="email" id="email" />
       <label for="password">Password</label>
-      <input type="password" name="password" id="password" />
+      <input
+        class="login-input"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <button class="login-button" type="submit">Login</button>
     </form>
   </body>
 </html>
