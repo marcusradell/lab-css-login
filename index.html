@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab-css-login</title>
+    <style>
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 50ch;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="login-form" action="/login">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+    </form>
+  </body>
+</html>
